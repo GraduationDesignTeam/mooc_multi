@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.mooc.mapper.ChoiceOfQuestionMapper">
+  <resultMap id="BaseResultMap" type="com.mooc.mooc.model.ChoiceOfQuestion">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="task_id" jdbcType="INTEGER" property="taskId" />
+    <result column="course_id" jdbcType="INTEGER" property="courseId" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="op1" jdbcType="CHAR" property="op1" />
+    <result column="op2" jdbcType="CHAR" property="op2" />
+    <result column="op3" jdbcType="CHAR" property="op3" />
+    <result column="op4" jdbcType="CHAR" property="op4" />
+    <result column="answer" jdbcType="INTEGER" property="answer" />
+    <result column="resolution" jdbcType="VARCHAR" property="resolution" />
+    <result column="score" jdbcType="DOUBLE" property="score" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from choice_question
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.mooc.mooc.model.ChoiceOfQuestion">
+    insert into choice_question (id, task_id, course_id, 
+      content, op1, op2, op3, 
+      op4, answer, resolution, 
+      score, type)
+    values (#{id,jdbcType=INTEGER}, #{taskId,jdbcType=INTEGER}, #{courseId,jdbcType=INTEGER}, 
+      #{content,jdbcType=VARCHAR}, #{op1,jdbcType=CHAR}, #{op2,jdbcType=CHAR}, #{op3,jdbcType=CHAR}, 
+      #{op4,jdbcType=CHAR}, #{answer,jdbcType=INTEGER}, #{resolution,jdbcType=VARCHAR}, 
+      #{score,jdbcType=DOUBLE}, #{type,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mooc.mooc.model.ChoiceOfQuestion">
+    update choice_question
+    set task_id = #{taskId,jdbcType=INTEGER},
+      course_id = #{courseId,jdbcType=INTEGER},
+      content = #{content,jdbcType=VARCHAR},
+      op1 = #{op1,jdbcType=CHAR},
+      op2 = #{op2,jdbcType=CHAR},
+      op3 = #{op3,jdbcType=CHAR},
+      op4 = #{op4,jdbcType=CHAR},
+      answer = #{answer,jdbcType=INTEGER},
+      resolution = #{resolution,jdbcType=VARCHAR},
+      score = #{score,jdbcType=DOUBLE},
+      type = #{type,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, task_id, course_id, content, op1, op2, op3, op4, answer, resolution, score, 
+    type
+    from choice_question
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, task_id, course_id, content, op1, op2, op3, op4, answer, resolution, score, 
+    type
+    from choice_question
+  </select>
+
+  <select id="selectAllByType" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, task_id, course_id, content, op1, op2, op3, op4, answer, resolution, score,
+    type
+    from choice_question
+    where type = #{type,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectAllByTask" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, task_id, course_id, content, op1, op2, op3, op4, answer, resolution, score,
+    type
+    from choice_question
+    where task_id = #{taskId,jdbcType=INTEGER}
+  </select>
+</mapper>

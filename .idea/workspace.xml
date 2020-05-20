@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="031b5b72-43f4-4b5e-b050-f1059f77a2ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/mooc/client/MoocClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mooc/model/CourseInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mooc/model/CourseInfoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mooc/model/ResultVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mooc/model/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/CourseNoticeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/controller/CourseNoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/mapper/CourseNoticeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/model/CourseNotice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/service/CourseNoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/service/CourseNoticeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/util/Define.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/vo/CourseNoticeVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/resources/mapper/CourseNoticeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/CourseWareApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/controller/CourseWareController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/mapper/CourseWareMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/model/CourseWare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/service/CourseWareService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/service/CourseWareServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/util/Define.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/util/FileHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/vo/CourseWareVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/vo/ResultVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/resources/mapper/CourseWareMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseware/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/MoocApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/ChoiceQuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/CourseChapterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/CourseManageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/CourseNoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/CourseSectionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/CourseTaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/DiscussRecordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/DiscussionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/InformationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/JudgeQuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/PersonalMessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/SubjectiveQuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/WebSocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/AssistantOfCourseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/ChoiceAnswerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/ChoiceOfQuestionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/CourseChapterMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/CourseInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/CourseNoticeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/CourseSectionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/CourseTaskAccomplishMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/CourseTaskMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/DiscussRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/DiscussionInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/InformationInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/JudgeAnswerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/JudgeOfQuestionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/PersonMessageMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/StudentOfCourseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/SubjectiveAnswerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/SubjectiveOfQuestionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/TeacherOfCourseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/UserDiscussionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/UserInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/ChangeForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/ChoiceAnswer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/ChoiceOfQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseChapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseNotice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseSection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseStatistic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseTaskAccomplish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CurrPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/DiscussRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/DiscussionDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/DiscussionInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/DiscussionStatistic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/InformationInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/JudgeAnswer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/JudgeOfQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/MajorStatistic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/PersonMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/StudentOfCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/SubjectiveAnswer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/SubjectiveOfQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/UserDiscussion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/UserStatistic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/ChoiceQuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/CourseChapterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/CourseManageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/CourseNoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/CourseSectionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/CourseTaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/DiscussRecordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/DiscussionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/InformationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/JudgeQuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/PersonalMessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/SubjectiveQuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/ChoiceQuestionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/CourseChapterServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/CourseManageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/CourseNoticeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/CourseSectionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/CourseTaskServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/DiscussRecordServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/DiscussionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/InformationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/JudgeQuestionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/PersonalMessageImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/SubjectiveQuestionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/util/Define.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/util/FileHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/util/MyBatisGeneratorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/util/StringFormatUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/CourseInfoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/CourseNoticeVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/DiscussionVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/MessageVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/ResultVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/StatisticVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/UserInfoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/AssistantOfCourseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/ChoiceAnswerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/ChoiceOfQuestionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/CourseChapterMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/CourseInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/CourseNoticeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/CourseSectionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/CourseTaskAccomplishMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/CourseTaskMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/DiscussRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/DiscussionInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/InformationInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/JudgeAnswerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/JudgeOfQuestionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/PersonMessageMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/StudentOfCourseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/SubjectiveAnswerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/SubjectiveOfQuestionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/TeacherOfCourseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/UserDiscussionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mooc/src/test/java/com/mooc/mooc/MoocApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/mooc/server/ServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/test/java/com/mooc/server/ServerApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Administrator\git\mooc_multi\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1c7qdn6vvCcAnx0WgyTTJHTF0ID" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.50574714" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\git\mooc_multi\coursenotice\src\main\resources" />
+      <recent name="C:\Users\Administrator\git\mooc_multi\courseware\src\main\resources\mapper" />
+      <recent name="C:\Users\Administrator\git\mooc_multi\common\src\main\resources" />
+      <recent name="C:\Users\Administrator\git\mooc_multi\coursenotice\src\main\java\com\mooc\coursenotice\service" />
+      <recent name="C:\Users\Administrator\git\mooc_multi\coursenotice\src\main\java\com\mooc\coursenotice" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mooc.coursenotice.controller" />
+      <recent name="com.mooc.model" />
+      <recent name="com.mooc.coursenotice.vo" />
+      <recent name="com.mooc.coursenotice.mapper" />
+      <recent name="com.mooc.coursenotice.model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\git\mooc_multi\coursenotice\src\main\resources\mapper" />
+      <recent name="C:\Users\Administrator\git\mooc_multi\coursenotice\src\main\resources" />
+      <recent name="C:\Users\Administrator\git\mooc_multi\courseware\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CourseNoticeApplication">
+    <configuration name="CourseNoticeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="coursenotice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mooc.coursenotice.CourseNoticeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseWareApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="courseware" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mooc.courseware.CourseWareApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoocApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mooc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mooc.mooc.MoocApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mooc.server.ServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.CourseWareApplication" />
+      <item itemvalue="Spring Boot.MoocApplication" />
+      <item itemvalue="Spring Boot.ServerApplication" />
+      <item itemvalue="Spring Boot.CourseNoticeApplication" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="031b5b72-43f4-4b5e-b050-f1059f77a2ae" name="Default Changelist" comment="" />
+      <created>1589890068410</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589890068410</updated>
+      <workItem from="1589890069800" duration="6691000" />
+      <workItem from="1589897389068" duration="7862000" />
+      <workItem from="1589934497492" duration="2963000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="74" key="#Notifications" timestamp="1589897416171">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="74" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1589897416171" />
+    <state x="361" y="74" key="#Project_Structure" timestamp="1589900677019">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="74" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1589900677019" />
+    <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589899050099">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1589899050099" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1589903141576">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589903141576" />
+    <state x="336" y="10" key="CommitChangelistDialog2" timestamp="1589937249698">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="336" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589937249698" />
+    <state x="549" y="157" key="FileChooserDialogImpl" timestamp="1589937117505">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589937117505" />
+    <state width="1493" height="144" key="GridCell.Tab.0.bottom" timestamp="1589936346171">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589936346171" />
+    <state width="1493" height="144" key="GridCell.Tab.0.center" timestamp="1589936346170">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589936346170" />
+    <state width="1493" height="144" key="GridCell.Tab.0.left" timestamp="1589936346170">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589936346170" />
+    <state width="1493" height="144" key="GridCell.Tab.0.right" timestamp="1589936346171">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589936346171" />
+    <state width="1493" height="144" key="GridCell.Tab.1.bottom" timestamp="1589936346171">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589936346171" />
+    <state width="1493" height="144" key="GridCell.Tab.1.center" timestamp="1589936346171">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1589936346171" />
+    <state width="1493" height="144" key="GridCell.Tab.1.left" timestamp="1589936346171">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1589936346171" />
+    <state width="1493" height="144" key="GridCell.Tab.1.right" timestamp="1589936346171">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589936346171" />
+    <state width="1493" height="376" key="GridCell.Tab.2.bottom" timestamp="1589936341126">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="376" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589936341126" />
+    <state width="1493" height="376" key="GridCell.Tab.2.center" timestamp="1589936341126">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="376" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1589936341126" />
+    <state width="1493" height="376" key="GridCell.Tab.2.left" timestamp="1589936341126">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="376" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1589936341126" />
+    <state width="1493" height="376" key="GridCell.Tab.2.right" timestamp="1589936341126">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="376" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1589936341126" />
+    <state x="484" y="126" key="RollbackChangesDialog" timestamp="1589937464574">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="484" y="126" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1589937464574" />
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1589897408223">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589897408223" />
+    <state x="171" y="123" key="new project wizard" timestamp="1589903369170">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="171" y="123" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1589903369170" />
+    <state x="511" y="45" key="refactoring.ChangeSignatureDialog" timestamp="1589897992166">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="45" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1589897992166" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1589936852668">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589936852668" />
+  </component>
+</project>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.mooc.mapper.DiscussionInfoMapper">
+  <resultMap id="BaseResultMap" type="com.mooc.mooc.model.DiscussionInfo">
+    <id column="discussion_id" jdbcType="INTEGER" property="discussionId" />
+    <result column="discussion_name" jdbcType="VARCHAR" property="discussionName" />
+    <result column="course_id" jdbcType="INTEGER" property="courseId" />
+    <result column="teacher_id" jdbcType="INTEGER" property="teacherId" />
+    <result column="assistant_id" jdbcType="INTEGER" property="assistantId" />
+    <result column="discussion_state" jdbcType="INTEGER" property="discussionState" />
+    <result column="discussion_description" jdbcType="VARCHAR" property="discussionDescription" />
+    <result column="open_date" jdbcType="TIMESTAMP" property="openDate" />
+    <result column="close_date" jdbcType="TIMESTAMP" property="closeDate" />
+    <result column="discussion_authority" jdbcType="INTEGER" property="discussionAuthority" />
+    <result column="discussion_popularity" jdbcType="INTEGER" property="discussionPopularity" />
+  </resultMap>
+  <resultMap id="DetailResultMap" type="com.mooc.mooc.model.DiscussionDetail" extends="BaseResultMap">
+    <!--一对一-->
+    <association property="courseInfo" column="id" javaType="CourseInfo">
+      <id column="id" jdbcType="INTEGER" property="id" />
+      <result column="name" jdbcType="VARCHAR" property="name" />
+      <result column="type" jdbcType="VARCHAR" property="type" />
+      <result column="school" jdbcType="VARCHAR" property="school" />
+      <result column="photo" jdbcType="VARCHAR" property="photo" />
+    </association>
+    <association property="teacher" column="user_id" javaType="UserInfo">
+      <id column="user_id" jdbcType="INTEGER" property="userId" />
+      <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    </association>
+  </resultMap>
+  <resultMap id="MajorStatisticMap" type="MajorStatistic">
+    <result column="type" jdbcType="VARCHAR" property="major" />
+    <result property="num" column="discussion_count"></result>
+  </resultMap>
+  <resultMap id="DiscussionStatisticMap" type="DiscussionStatistic">
+    <result column="name" jdbcType="VARCHAR" property="discussionName" />
+    <result property="popularity" column="popularity"></result>
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from discussion_info
+    where discussion_id = #{discussionId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.mooc.mooc.model.DiscussionInfo">
+    insert into discussion_info (discussion_id, discussion_name, course_id, 
+      teacher_id, assistant_id, discussion_state, 
+      discussion_description, open_date, close_date, 
+      discussion_authority, discussion_popularity
+      )
+    values (#{discussionId,jdbcType=INTEGER}, #{discussionName,jdbcType=VARCHAR}, #{courseId,jdbcType=INTEGER}, 
+      #{teacherId,jdbcType=INTEGER}, #{assistantId,jdbcType=INTEGER}, #{discussionState,jdbcType=INTEGER}, 
+      #{discussionDescription,jdbcType=VARCHAR}, #{openDate,jdbcType=TIMESTAMP}, #{closeDate,jdbcType=TIMESTAMP}, 
+      #{discussionAuthority,jdbcType=INTEGER}, #{discussionPopularity,jdbcType=INTEGER}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mooc.mooc.model.DiscussionInfo">
+    update discussion_info
+    set discussion_name = #{discussionName,jdbcType=VARCHAR},
+      course_id = #{courseId,jdbcType=INTEGER},
+      teacher_id = #{teacherId,jdbcType=INTEGER},
+      assistant_id = #{assistantId,jdbcType=INTEGER},
+      discussion_state = #{discussionState,jdbcType=INTEGER},
+      discussion_description = #{discussionDescription,jdbcType=VARCHAR},
+      open_date = #{openDate,jdbcType=TIMESTAMP},
+      close_date = #{closeDate,jdbcType=TIMESTAMP},
+      discussion_authority = #{discussionAuthority,jdbcType=INTEGER},
+      discussion_popularity = #{discussionPopularity,jdbcType=INTEGER}
+    where discussion_id = #{discussionId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="DetailResultMap">
+    select d.discussion_id, d.discussion_name, d.course_id, d.teacher_id, d.assistant_id, d.discussion_state,
+    d.discussion_description, d.open_date, d.close_date, d.discussion_authority, d.discussion_popularity,
+    c.name, c.type, c.school, c.photo, u.user_name
+    from (discussion_info d inner join course_info c on d.course_id=c.id) inner join user_info u on d.teacher_id = u.user_id
+    where discussion_id = #{discussionId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select discussion_id, discussion_name, course_id, teacher_id, assistant_id, discussion_state, 
+    discussion_description, open_date, close_date, discussion_authority, discussion_popularity
+    from discussion_info
+  </select>
+  <select id="queryAllHot" parameterType="com.mooc.mooc.model.DiscussionDetail" resultMap="DetailResultMap">
+    select d.discussion_id, d.discussion_name, d.course_id, d.teacher_id, d.assistant_id, d.discussion_state,
+    d.discussion_description, d.open_date, d.close_date, d.discussion_authority, d.discussion_popularity,
+    c.id, c.name, c.type, c.school, c.photo, u.user_name
+    from (discussion_info d inner join course_info c on d.course_id=c.id) inner join user_info u on d.teacher_id = u.user_id
+    <where>
+      <if test="discussionName!=null and discussionName!=''">
+        and d.discussion_name like concat('%',#{discussionName},'%')
+      </if>
+      <if test="courseInfo.id!=null and courseInfo.id!=''">
+        and c.id = #{courseInfo.id}
+      </if>
+      <if test="courseInfo.name!=null and courseInfo.name!=''">
+        and c.name like concat('%',#{courseInfo.name},'%')
+      </if>
+      <if test="courseInfo.type!=null and courseInfo.type!=''">
+        and c.type = #{courseInfo.type}
+      </if>
+      <if test="courseInfo.school!=null and courseInfo.school!=''">
+        and c.school = #{courseInfo.school}
+      </if>
+    </where>
+    order by d.discussion_popularity desc
+  </select>
+  <select id="queryAllNew" parameterType="com.mooc.mooc.model.DiscussionDetail" resultMap="DetailResultMap">
+    select d.discussion_id, d.discussion_name, d.course_id, d.teacher_id, d.assistant_id, d.discussion_state,
+    d.discussion_description, d.open_date, d.close_date, d.discussion_authority, d.discussion_popularity,
+    c.id, c.name, c.type, c.school, c.photo, u.user_name
+    from (discussion_info d inner join course_info c on d.course_id=c.id) inner join user_info u on d.teacher_id = u.user_id
+    <where>
+      <if test="discussionName!=null and discussionName!=''">
+        and d.discussion_name like concat('%',#{discussionName},'%')
+      </if>
+      <if test="courseInfo.id!=null and courseInfo.id!=''">
+        and c.id = #{courseInfo.id}
+      </if>
+      <if test="courseInfo.name!=null and courseInfo.name!=''">
+        and c.name like concat('%',#{courseInfo.name},'%')
+      </if>
+      <if test="courseInfo.type!=null and courseInfo.type!=''">
+        and c.type = #{courseInfo.type}
+      </if>
+      <if test="courseInfo.school!=null and courseInfo.school!=''">
+        and c.school = #{courseInfo.school}
+      </if>
+    </where>
+    order by d.open_date desc
+  </select>
+  <select id="queryMajorSum" parameterType="java.lang.Integer" resultMap="MajorStatisticMap">
+    select type,count(discussion_id) discussion_count from `discussion_info` d
+    inner join course_info c on d.course_id=c.id
+    where year(open_date)=#{year}
+    group by type
+    order by count(discussion_id) desc
+  </select>
+  <select id="queryDiscussionSum" parameterType="java.lang.Integer" resultMap="DiscussionStatisticMap">
+    select discussion_name name,discussion_popularity popularity from `discussion_info`
+    where year(open_date)=#{year}
+    group by discussion_name
+    order by discussion_popularity desc
+  </select>
+</mapper>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.mooc.mapper.StudentOfCourseMapper">
+  <resultMap id="BaseResultMap" type="com.mooc.mooc.model.StudentOfCourse">
+    <id column="course_user_id" jdbcType="INTEGER" property="courseUserId" />
+    <result column="course_id" jdbcType="INTEGER" property="courseId" />
+    <result column="student_id" jdbcType="INTEGER" property="studentId" />
+    <result column="course_grade" jdbcType="DOUBLE" property="courseGrade" />
+    <result column="course_time" jdbcType="DOUBLE" property="courseTime" />
+    <result column="course_evaluate" jdbcType="VARCHAR" property="courseEvaluate" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from student_of_course
+    where course_user_id = #{courseUserId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.mooc.mooc.model.StudentOfCourse">
+    insert into student_of_course (course_user_id, course_id, student_id, 
+      course_grade, course_time, course_evaluate
+      )
+    values (#{courseUserId,jdbcType=INTEGER}, #{courseId,jdbcType=INTEGER}, #{studentId,jdbcType=INTEGER}, 
+      #{courseGrade,jdbcType=DOUBLE}, #{courseTime,jdbcType=DOUBLE}, #{courseEvaluate,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mooc.mooc.model.StudentOfCourse">
+    update student_of_course
+    set course_id = #{courseId,jdbcType=INTEGER},
+      student_id = #{studentId,jdbcType=INTEGER},
+      course_grade = #{courseGrade,jdbcType=DOUBLE},
+      course_time = #{courseTime,jdbcType=DOUBLE},
+      course_evaluate = #{courseEvaluate,jdbcType=VARCHAR}
+    where course_user_id = #{courseUserId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select course_user_id, course_id, student_id, course_grade, course_time, course_evaluate
+    from student_of_course
+    where course_user_id = #{courseUserId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select course_user_id, course_id, student_id, course_grade, course_time, course_evaluate
+    from student_of_course
+  </select>
+  <select id="selByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select course_user_id, course_id, student_id, course_grade, course_time, course_evaluate
+    from student_of_course
+    where student_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <select id="count" resultType="java.lang.Integer">
+    select count(0) as num from student_of_course
+    where course_id=#{courseId} and student_id=#{studentId};
+  </select>
+</mapper>

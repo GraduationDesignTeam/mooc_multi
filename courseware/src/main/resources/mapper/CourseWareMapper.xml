@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.courseware.mapper.CourseWareMapper">
+  <resultMap id="BaseResultMap" type="com.mooc.courseware.model.CourseWare">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="course_id" jdbcType="INTEGER" property="courseId" />
+    <result column="section_id" jdbcType="INTEGER" property="sectionId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="size" jdbcType="VARCHAR" property="size" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+    <result column="download_flag" jdbcType="INTEGER" property="downloadFlag" />
+    <result column="upload_time" jdbcType="TIMESTAMP" property="uploadTime" />
+  </resultMap>
+  <resultMap id="ExtendedResultMap" type="com.mooc.courseware.vo.CourseWareVO" extends="BaseResultMap">
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="uname" jdbcType="VARCHAR" property="uname" />
+    <result column="scname" jdbcType="VARCHAR" property="scname" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from course_ware
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.mooc.courseware.model.CourseWare">
+    insert into course_ware (id, course_id, section_id, 
+      user_id, title, name, 
+      type, size, state, 
+      download_flag, upload_time)
+    values (#{id,jdbcType=INTEGER}, #{courseId,jdbcType=INTEGER}, #{sectionId,jdbcType=INTEGER}, 
+      #{userId,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      #{type,jdbcType=VARCHAR}, #{size,jdbcType=VARCHAR}, #{state,jdbcType=INTEGER}, 
+      #{downloadFlag,jdbcType=INTEGER}, #{uploadTime,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mooc.courseware.model.CourseWare">
+    update course_ware
+    set course_id = #{courseId,jdbcType=INTEGER},
+      section_id = #{sectionId,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER},
+      title = #{title,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      size = #{size,jdbcType=VARCHAR},
+      state = #{state,jdbcType=INTEGER},
+      download_flag = #{downloadFlag,jdbcType=INTEGER},
+      upload_time = #{uploadTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ExtendedResultMap">
+    select c.id, c.course_id, c.section_id, c.user_id, c.title, c.name, c.type, c.size, c.state, c.download_flag, c.upload_time,
+    u.user_name username, u.name uname, sc.name scname
+    from course_ware c
+    left join user_info u on c.user_id=u.user_id
+    left join course_section sc on c.section_id=sc.id
+    where c.id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectBySectionId" resultMap="ExtendedResultMap">
+    select c.id, c.course_id, c.section_id, c.user_id, c.title, c.name, c.type, c.size, c.state, c.download_flag, c.upload_time,
+    u.user_name username, u.name uname, sc.name scname
+    from course_ware c
+    left join user_info u on c.user_id=u.user_id
+    left join course_section sc on c.section_id=sc.id
+    where c.section_id = #{sectionId,jdbcType=INTEGER}
+  </select>
+  <select id="selectByCourseId" resultMap="ExtendedResultMap">
+    select c.id, c.course_id, c.section_id, c.user_id, c.title, c.name, c.type, c.size, c.state, c.download_flag, c.upload_time,
+    u.user_name username, u.name uname, sc.name scname
+    from course_ware c
+    left join user_info u on c.user_id=u.user_id
+    left join course_section sc on c.section_id=sc.id
+    where c.course_id = #{courseId,jdbcType=INTEGER}
+  </select>
+  <select id="selectUnassociatedByCourseId" resultMap="ExtendedResultMap">
+    select c.id, c.course_id, c.section_id, c.user_id, c.title, c.name, c.type, c.size, c.state, c.download_flag, c.upload_time,
+    u.user_name username, u.name uname, sc.name scname
+    from course_ware c
+    left join user_info u on c.user_id=u.user_id
+    left join course_section sc on c.section_id=sc.id
+    where c.course_id = #{courseId,jdbcType=INTEGER} and c.section_id is null
+  </select>
+</mapper>

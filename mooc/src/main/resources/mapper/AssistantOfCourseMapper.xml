@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.mooc.mapper.AssistantOfCourseMapper">
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from assistant_of_course
+    where course_id = #{courseId,jdbcType=INTEGER}
+      and assistant_id = #{assistantId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert">
+    insert into assistant_of_course (course_id, assistant_id)
+    values (#{courseId,jdbcType=INTEGER}, #{assistantId,jdbcType=INTEGER})
+  </insert>
+  <select id="selectAssistantOfCourse" resultType="com.mooc.mooc.model.UserInfo">
+    select u.user_id userId, u.user_name userName, u.school school,
+     u.phone phone, u.grade grade, u.major major, u.name name, u.picture picture
+    from assistant_of_course a
+    inner join user_info u on a.assistant_id=u.user_id
+    where a.course_id=#{courseId}
+  </select>
+  <select id="count" resultType="java.lang.Integer">
+    select count(0) as num from assistant_of_course
+    where course_id=#{courseId} and assistant_id=#{assistantId};
+  </select>
+</mapper>

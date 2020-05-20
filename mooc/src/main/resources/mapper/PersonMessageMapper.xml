@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.mooc.mapper.PersonMessageMapper">
+  <resultMap id="BaseResultMap" type="com.mooc.mooc.model.PersonMessage">
+    <id column="msg_id" jdbcType="INTEGER" property="msgId" />
+    <result column="msg_type" jdbcType="INTEGER" property="msgType" />
+    <result column="msg_post" jdbcType="INTEGER" property="msgPost" />
+    <result column="msg_get" jdbcType="INTEGER" property="msgGet" />
+    <result column="msg_time" jdbcType="TIMESTAMP" property="msgTime" />
+    <result column="msg_content" jdbcType="VARCHAR" property="msgContent" />
+    <result column="msg_postname" jdbcType="VARCHAR" property="msgPostname" />
+    <result column="msg_getname" jdbcType="VARCHAR" property="msgGetname" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from person_message
+    where msg_id = #{msgId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.mooc.mooc.model.PersonMessage">
+    insert into person_message (msg_id, msg_type, msg_post, 
+      msg_get, msg_time, msg_content, 
+      msg_postname, msg_getname)
+    values (#{msgId,jdbcType=INTEGER}, #{msgType,jdbcType=INTEGER}, #{msgPost,jdbcType=INTEGER}, 
+      #{msgGet,jdbcType=INTEGER}, #{msgTime,jdbcType=TIMESTAMP}, #{msgContent,jdbcType=VARCHAR}, 
+      #{msgPostname,jdbcType=VARCHAR}, #{msgGetname,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mooc.mooc.model.PersonMessage">
+    update person_message
+    set msg_type = #{msgType,jdbcType=INTEGER},
+      msg_post = #{msgPost,jdbcType=INTEGER},
+      msg_get = #{msgGet,jdbcType=INTEGER},
+      msg_time = #{msgTime,jdbcType=TIMESTAMP},
+      msg_content = #{msgContent,jdbcType=VARCHAR},
+      msg_postname = #{msgPostname,jdbcType=VARCHAR},
+      msg_getname = #{msgGetname,jdbcType=VARCHAR}
+    where msg_id = #{msgId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select msg_id, msg_type, msg_post, msg_get, msg_time, msg_content, msg_postname, 
+    msg_getname
+    from person_message
+    where msg_id = #{msgId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select msg_id, msg_type, msg_post, msg_get, msg_time, msg_content, msg_postname, 
+    msg_getname
+    from person_message
+  </select>
+  <select id="selectTwo" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select msg_id, msg_type, msg_post, msg_get, msg_time, msg_content, msg_postname,
+    msg_getname
+    from person_message
+    where msg_post = #{postId,jdbcType=INTEGER} and msg_get = #{getId,jdbcType=INTEGER} or msg_post = #{getId,jdbcType=INTEGER} and msg_get = #{postId,jdbcType=INTEGER} order by msg_time asc
+  </select>
+  <select id="selectOne" parameterType="com.mooc.mooc.model.PersonMessage" resultMap="BaseResultMap">
+    select msg_id, msg_type, msg_post, msg_get, msg_time, msg_content, msg_postname,
+    msg_getname
+    from person_message
+    where msg_time = #{msgTime,jdbcType=TIMESTAMP} and msg_content = #{msgContent,jdbcType=VARCHAR}
+  </select>
+</mapper>

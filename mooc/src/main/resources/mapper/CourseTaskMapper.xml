@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.mooc.mapper.CourseTaskMapper">
+  <resultMap id="BaseResultMap" type="com.mooc.mooc.model.CourseTask">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="course_id" jdbcType="INTEGER" property="courseId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="score" jdbcType="DOUBLE" property="score" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="limit_time" jdbcType="INTEGER" property="limitTime" />
+    <result column="limit_number" jdbcType="INTEGER" property="limitNumber" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from course_task
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.mooc.mooc.model.CourseTask">
+    insert into course_task (id, course_id, user_id, 
+      name, type, score, create_time, 
+      update_time, start_time, end_time, 
+      limit_time, limit_number)
+    values (#{id,jdbcType=INTEGER}, #{courseId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, 
+      #{name,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER}, #{score,jdbcType=DOUBLE}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{startTime,jdbcType=TIMESTAMP}, #{endTime,jdbcType=TIMESTAMP}, 
+      #{limitTime,jdbcType=INTEGER}, #{limitNumber,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mooc.mooc.model.CourseTask">
+    update course_task
+    set course_id = #{courseId,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER},
+      name = #{name,jdbcType=VARCHAR},
+      type = #{type,jdbcType=INTEGER},
+      score = #{score,jdbcType=DOUBLE},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      start_time = #{startTime,jdbcType=TIMESTAMP},
+      end_time = #{endTime,jdbcType=TIMESTAMP},
+      limit_time = #{limitTime,jdbcType=INTEGER},
+      limit_number = #{limitNumber,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, course_id, user_id, name, type, score, create_time, update_time, start_time, 
+    end_time, limit_time, limit_number
+    from course_task
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, course_id, user_id, name, type, score, create_time, update_time, start_time, 
+    end_time, limit_time, limit_number
+    from course_task
+  </select>
+
+  <select id="selectAllByCourse" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, course_id, user_id, name, type, score, create_time, update_time, start_time,
+    end_time, limit_time, limit_number
+    from course_task
+    where course_id = #{courseId}
+  </select>
+
+  <select id="selectByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id, course_id, user_id, name, type, score, create_time, update_time, start_time,
+    end_time, limit_time, limit_number
+    from course_task
+    where name = #{name}
+  </select>
+
+  <select id="selectTaskAllByCourse" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, course_id, user_id, name, type, score, create_time, update_time, start_time,
+    end_time, limit_time, limit_number
+    from course_task
+    where course_id = #{courseId} and type=0
+  </select>
+
+  <select id="selectExamAllByCourse" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, course_id, user_id, name, type, score, create_time, update_time, start_time,
+    end_time, limit_time, limit_number
+    from course_task
+    where course_id = #{courseId} and type=1
+  </select>
+</mapper>

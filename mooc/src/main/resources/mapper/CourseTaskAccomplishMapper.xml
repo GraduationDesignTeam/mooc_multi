@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.mooc.mapper.CourseTaskaccomplishMapperMapper">
+  <resultMap id="BaseResultMap" type="com.mooc.mooc.model.CourseTaskAccomplish">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="course_id" jdbcType="INTEGER" property="courseId" />
+    <result column="task_id" jdbcType="INTEGER" property="taskId" />
+    <result column="student_id" jdbcType="INTEGER" property="studentId" />
+    <result column="score" jdbcType="DOUBLE" property="score" />
+    <result column="finish_time" jdbcType="DOUBLE" property="finishTime" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="answer_number" jdbcType="INTEGER" property="answerNumber" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from course_task_accomplish
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.mooc.mooc.model.CourseTaskAccomplish">
+    insert into course_task_accomplish (id, student_id, task_id,
+      course_id, score, finish_time,
+     start_time, end_time,
+      answer_number)
+    values (#{id,jdbcType=INTEGER}, #{studentId,jdbcType=INTEGER}, #{taskId,jdbcType=INTEGER},
+       #{score,jdbcType=DOUBLE}, #{finishTime,jdbcType=DOUBLE},
+       #{startTime,jdbcType=TIMESTAMP}, #{endTime,jdbcType=TIMESTAMP},
+       #{answerNumber,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mooc.mooc.model.CourseTaskAccomplish">
+    update course_task_accomplish
+    set course_id = #{courseId,jdbcType=INTEGER},
+      student_id = #{studentId,jdbcType=INTEGER},
+      task_id = #{taskId,jdbcType=INTEGER},
+      score = #{score,jdbcType=DOUBLE},
+      finish_time = #{finishTime,jdbcType=TIMESTAMP},
+      start_time = #{startTime,jdbcType=TIMESTAMP},
+      end_time = #{endTime,jdbcType=TIMESTAMP},
+      answer_number = #{answerNumber,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, course_id, student_id, task_id, score, finish_time, start_time,
+    end_time, answer_number
+    from course_task_accomplish
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, course_id, student_id, task_id, score, finish_time, start_time,
+    end_time, answer_number
+    from course_task_accomplish
+  </select>
+</mapper>

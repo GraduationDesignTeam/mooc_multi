@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.mooc.mapper.CourseSectionMapper">
+  <resultMap id="BaseResultMap" type="com.mooc.mooc.model.CourseSection">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="chapter_id" jdbcType="INTEGER" property="chapterId" />
+    <result column="number" jdbcType="INTEGER" property="number" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from course_section
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <update id="decreaseNumber" parameterType="com.mooc.mooc.model.CourseChapter">
+    update course_section
+    set number = number-1
+    where chapter_id = #{chapterId} and number > #{number}
+  </update>
+  <insert id="insert" parameterType="com.mooc.mooc.model.CourseSection">
+    insert into course_section (id, chapter_id, number, 
+      name)
+    values (#{id,jdbcType=INTEGER}, #{chapterId,jdbcType=INTEGER}, #{number,jdbcType=INTEGER}, 
+      #{name,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mooc.mooc.model.CourseSection">
+    update course_section
+    set chapter_id = #{chapterId,jdbcType=INTEGER},
+      number = #{number,jdbcType=INTEGER},
+      name = #{name,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, chapter_id, number, name
+    from course_section
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+</mapper>
