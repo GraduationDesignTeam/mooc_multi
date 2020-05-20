@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.discussion.mapper.DiscussRecordMapper">
+  <resultMap id="BaseResultMap" type="com.mooc.discussion.model.DiscussRecord">
+    <id column="discuss_record_id" jdbcType="INTEGER" property="discussRecordId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="discussion_id" jdbcType="INTEGER" property="discussionId" />
+    <result column="discuss_state" jdbcType="INTEGER" property="discussState" />
+    <result column="send_time" jdbcType="TIMESTAMP" property="sendTime" />
+    <result column="last_update_time" jdbcType="TIMESTAMP" property="lastUpdateTime" />
+    <result column="delete_time" jdbcType="TIMESTAMP" property="deleteTime" />
+    <result column="reply_record_id" jdbcType="INTEGER" property="replyRecordId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="storey_id" jdbcType="INTEGER" property="storeyId" />
+    <result column="discuss_content" jdbcType="LONGVARCHAR" property="discussContent" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from discuss_record
+    where discuss_record_id = #{discussRecordId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.mooc.discussion.model.DiscussRecord">
+    insert into discuss_record (discuss_record_id, user_id, discussion_id, 
+      discuss_state, send_time, last_update_time, 
+      delete_time, reply_record_id, user_name, 
+      storey_id, discuss_content)
+    values (#{discussRecordId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{discussionId,jdbcType=INTEGER}, 
+      #{discussState,jdbcType=INTEGER}, #{sendTime,jdbcType=TIMESTAMP}, #{lastUpdateTime,jdbcType=TIMESTAMP}, 
+      #{deleteTime,jdbcType=TIMESTAMP}, #{replyRecordId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, 
+      #{storeyId,jdbcType=INTEGER}, #{discussContent,jdbcType=LONGVARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mooc.discussion.model.DiscussRecord">
+    update discuss_record
+    set user_id = #{userId,jdbcType=INTEGER},
+      discussion_id = #{discussionId,jdbcType=INTEGER},
+      discuss_state = #{discussState,jdbcType=INTEGER},
+      send_time = #{sendTime,jdbcType=TIMESTAMP},
+      last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP},
+      delete_time = #{deleteTime,jdbcType=TIMESTAMP},
+      reply_record_id = #{replyRecordId,jdbcType=INTEGER},
+      user_name = #{userName,jdbcType=VARCHAR},
+      storey_id = #{storeyId,jdbcType=INTEGER},
+      discuss_content = #{discussContent,jdbcType=LONGVARCHAR}
+    where discuss_record_id = #{discussRecordId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select discuss_record_id, user_id, discussion_id, discuss_state, send_time, last_update_time, 
+    delete_time, reply_record_id, user_name, storey_id, discuss_content
+    from discuss_record
+    where discuss_record_id = #{discussRecordId,jdbcType=INTEGER}
+  </select>
+  <select id="selectByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select discuss_record_id, user_id, discussion_id, discuss_state, send_time, last_update_time,
+    delete_time, reply_record_id, user_name, storey_id, discuss_content
+    from discuss_record
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select discuss_record_id, user_id, discussion_id, discuss_state, send_time, last_update_time, 
+    delete_time, reply_record_id, user_name, storey_id, discuss_content
+    from discuss_record
+  </select>
+  <select id="selByDiscussionId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select discuss_record_id, user_id, discussion_id, discuss_state, send_time, last_update_time,
+    delete_time, reply_record_id, user_name, storey_id, discuss_content
+    from discuss_record
+    where discussion_id = #{discussionId}
+    order by storey_id asc
+  </select>
+</mapper>

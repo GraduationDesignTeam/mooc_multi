@@ -2,217 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="031b5b72-43f4-4b5e-b050-f1059f77a2ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/mooc/client/MoocClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mooc/model/CourseInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mooc/model/CourseInfoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mooc/model/ResultVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mooc/model/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/CourseNoticeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/controller/CourseNoticeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/mapper/CourseNoticeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/model/CourseNotice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/service/CourseNoticeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/service/CourseNoticeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/util/Define.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/java/com/mooc/coursenotice/vo/CourseNoticeVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/resources/mapper/CourseNoticeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coursenotice/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/CourseWareApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/controller/CourseWareController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/controller/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/mapper/CourseWareMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/model/CourseWare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/service/CourseWareService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/service/CourseWareServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/util/Define.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/util/FileHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/vo/CourseWareVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/java/com/mooc/courseware/vo/ResultVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/resources/mapper/CourseWareMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courseware/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/MoocApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/config/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/ChoiceQuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/CourseChapterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/CourseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/CourseManageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/CourseNoticeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/CourseSectionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/CourseTaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/DiscussRecordController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/DiscussionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/InformationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/JudgeQuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/PersonalMessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/SubjectiveQuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/WebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/AssistantOfCourseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/ChoiceAnswerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/ChoiceOfQuestionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/CourseChapterMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/CourseInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/CourseNoticeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/CourseSectionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/CourseTaskAccomplishMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/CourseTaskMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/DiscussRecordMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/DiscussionInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/InformationInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/JudgeAnswerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/JudgeOfQuestionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/PersonMessageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/StudentOfCourseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/SubjectiveAnswerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/SubjectiveOfQuestionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/TeacherOfCourseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/UserDiscussionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/mapper/UserInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/ChangeForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/ChoiceAnswer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/ChoiceOfQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseChapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseNotice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseSection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseStatistic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CourseTaskAccomplish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/CurrPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/DiscussRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/DiscussionDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/DiscussionInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/DiscussionStatistic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/InformationInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/JudgeAnswer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/JudgeOfQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/MajorStatistic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/PersonMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/StudentOfCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/SubjectiveAnswer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/SubjectiveOfQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/UserDiscussion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/model/UserStatistic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/ChoiceQuestionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/CourseChapterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/CourseManageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/CourseNoticeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/CourseSectionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/CourseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/CourseTaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/DiscussRecordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/DiscussionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/InformationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/JudgeQuestionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/PersonalMessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/SubjectiveQuestionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/ChoiceQuestionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/CourseChapterServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/CourseManageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/CourseNoticeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/CourseSectionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/CourseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/CourseTaskServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/DiscussRecordServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/DiscussionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/InformationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/JudgeQuestionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/PersonalMessageImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/SubjectiveQuestionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/util/Define.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/util/FileHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/util/MyBatisGeneratorUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/util/StringFormatUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/CourseInfoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/CourseNoticeVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/DiscussionVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/MessageVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/ResultVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/StatisticVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/vo/UserInfoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/AssistantOfCourseMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/ChoiceAnswerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/ChoiceOfQuestionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/CourseChapterMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/CourseInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/CourseNoticeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/CourseSectionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/CourseTaskAccomplishMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/CourseTaskMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/DiscussRecordMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/DiscussionInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/InformationInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/JudgeAnswerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/JudgeOfQuestionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/PersonMessageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/StudentOfCourseMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/SubjectiveAnswerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/SubjectiveOfQuestionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/TeacherOfCourseMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/UserDiscussionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mooc/src/test/java/com/mooc/mooc/MoocApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/mooc/server/ServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/test/java/com/mooc/server/ServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mooc/model/CourseStatistic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mooc/model/MajorStatistic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/mooc/model/UserStatistic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/controller/DiscussRecordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/controller/DiscussionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/CourseInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/DiscussRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/DiscussionInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/InformationInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/UserInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/CurrPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/DiscussRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/DiscussionDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/DiscussionInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/DiscussionStatistic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/InformationInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/service/DiscussRecordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/service/DiscussionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/service/impl/DiscussRecordServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/service/impl/DiscussionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/util/Define.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/util/FileHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/util/StringFormatUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/vo/DiscussionVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/vo/ResultVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/vo/StatisticVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/resources/mapper/CourseInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/resources/mapper/DiscussRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/resources/mapper/DiscussionInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/resources/mapper/InformationInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discussion/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/mooc/client/MoocClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/mooc/client/MoocClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/client/target/" />
+    <ignored path="$PROJECT_DIR$/mooc/target/" />
+    <ignored path="$PROJECT_DIR$/coursenotice/target/" />
+    <ignored path="$PROJECT_DIR$/server/target/" />
+    <ignored path="$PROJECT_DIR$/courseware/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/common/target/" />
+    <ignored path="$PROJECT_DIR$/discussion/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/controller/DiscussionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="175" column="72" lean-forward="true" selection-start-line="175" selection-start-column="72" selection-end-line="175" selection-end-column="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/service/impl/DiscussionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="80" column="32" lean-forward="true" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/java/com/mooc/client/MoocClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -224,6 +112,45 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/discussion/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/config/CorsConfig.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/DiscussionStatistic.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/DiscussionDetail.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/mooc/model/UserStatistic.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/vo/StatisticVO.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/vo/DiscussionVO.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/util/MyBatisGeneratorUtil.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/mooc/model/MajorStatistic.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/DiscussRecordMapper.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/service/DiscussRecordService.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/controller/DiscussRecordController.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/mooc/model/CourseStatistic.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/CourseInfoMapper.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/UserInfoMapper.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/InformationInfo.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/InformationInfoMapper.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/service/impl/DiscussRecordServiceImpl.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/service/DiscussionService.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/CurrPageObject.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/controller/DiscussionController.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/resources/mapper/UserInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/discussion/src/main/resources/mapper/InformationInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/discussion/src/main/resources/mapper/DiscussRecordMapper.xml" />
+        <option value="$PROJECT_DIR$/discussion/src/main/resources/mapper/DiscussionInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/discussion/src/main/resources/mapper/CourseInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/client/src/main/java/com/mooc/client/MoocClient.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/DiscussionInfoMapper.java" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/service/impl/DiscussionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/discussion/pom.xml" />
+        <option value="$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/DiscussionApplication.java" />
+      </list>
+    </option>
+  </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -231,8 +158,213 @@
       </set>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="151" />
+    <option name="y" value="33" />
+    <option name="width" value="1683" />
+    <option name="height" value="1014" />
+  </component>
   <component name="ProjectId" id="1c7qdn6vvCcAnx0WgyTTJHTF0ID" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="coursenotice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="coursenotice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="coursenotice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="coursenotice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="discussion" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="mooc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="mooc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="mooc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="mooc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="mooc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mooc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="mooc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mooc" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc_multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc_multi" type="462c0819:PsiDirectoryNode" />
+              <item name="mooc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -248,33 +380,86 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589970499747" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.50574714" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\git\mooc_multi\coursenotice\src\main\resources" />
-      <recent name="C:\Users\Administrator\git\mooc_multi\courseware\src\main\resources\mapper" />
-      <recent name="C:\Users\Administrator\git\mooc_multi\common\src\main\resources" />
-      <recent name="C:\Users\Administrator\git\mooc_multi\coursenotice\src\main\java\com\mooc\coursenotice\service" />
-      <recent name="C:\Users\Administrator\git\mooc_multi\coursenotice\src\main\java\com\mooc\coursenotice" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.mooc.coursenotice.controller" />
-      <recent name="com.mooc.model" />
-      <recent name="com.mooc.coursenotice.vo" />
-      <recent name="com.mooc.coursenotice.mapper" />
-      <recent name="com.mooc.coursenotice.model" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\git\mooc_multi\coursenotice\src\main\resources\mapper" />
       <recent name="C:\Users\Administrator\git\mooc_multi\coursenotice\src\main\resources" />
       <recent name="C:\Users\Administrator\git\mooc_multi\courseware\src\main\resources\mapper" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mooc.discussion.model" />
+      <recent name="com.mooc.discussion.mapper" />
+      <recent name="com.mooc.model" />
+      <recent name="com.mooc.coursenotice.controller" />
+      <recent name="com.mooc.coursenotice.vo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\graduation\mooc_multi\discussion\src\main\resources" />
+      <recent name="D:\graduation\mooc_multi\discussion\src\main\resources\mapper" />
+      <recent name="D:\graduation\mooc_multi\discussion\src\main\java\com\mooc\discussion\mapper" />
+      <recent name="D:\graduation\mooc_multi\discussion\src\main\java\com\mooc\discussion\service\impl" />
+      <recent name="D:\graduation\mooc_multi\discussion\src\main\java\com\mooc\discussion\service" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CourseNoticeApplication">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MoocApplication">
+    <configuration name="DiscussionApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooc.discussion.DiscussionApplication" />
+      <module name="discussion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mooc.discussion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoocApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooc.mooc.MoocApplication" />
+      <module name="mooc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mooc.mooc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooc.server.ServerApplication" />
+      <module name="server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mooc.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CourseNoticeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="coursenotice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mooc.coursenotice.CourseNoticeApplication" />
@@ -304,11 +489,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.CourseWareApplication" />
-      <item itemvalue="Spring Boot.MoocApplication" />
-      <item itemvalue="Spring Boot.ServerApplication" />
-      <item itemvalue="Spring Boot.CourseNoticeApplication" />
+      <item itemvalue="Application.ServerApplication" />
+      <item itemvalue="Application.MoocApplication" />
+      <item itemvalue="Application.DiscussionApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MoocApplication" />
+        <item itemvalue="Application.DiscussionApplication" />
+        <item itemvalue="Application.ServerApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -337,6 +528,40 @@
       <workItem from="1589934497492" duration="2963000" />
     </task>
     <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="101" y="22" width="1122" height="676" extended-state="0" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Learn" order="3" />
+      <window_info id="DB Browser" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.19736843" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.3290441" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="DB Execution Console" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3290441" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32536766" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -434,5 +659,374 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589936852668" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/vo/ResultVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/vo/DiscussionVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/util/MyBatisGeneratorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/util/Define.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/util/StringFormatUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/util/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mooc/model/MajorStatistic.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/DiscussRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/DiscussionStatistic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/DiscussionInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/DiscussRecordMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mooc/model/CourseStatistic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/CourseInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/UserInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/InformationInfo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/InformationInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/service/impl/DiscussRecordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="91" column="48" lean-forward="true" selection-start-line="91" selection-start-column="48" selection-end-line="91" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/controller/DiscussRecordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="64" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/model/CurrPageObject.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc/src/main/resources/mapper/UserDiscussionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/resources/mapper/UserInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="80" column="90" lean-forward="true" selection-start-line="80" selection-start-column="90" selection-end-line="80" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/resources/mapper/InformationInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="81" lean-forward="true" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/resources/mapper/DiscussRecordMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-519">
+          <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/resources/mapper/CourseInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="157" column="11" lean-forward="true" selection-start-line="157" selection-start-column="11" selection-end-line="157" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/config/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/service/DiscussionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/service/DiscussRecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/resources/mapper/DiscussionInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-690">
+          <caret line="79" column="11" lean-forward="true" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/mapper/DiscussionInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/util/MyBatisGeneratorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/config/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-248">
+          <caret line="83" column="52" lean-forward="true" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="42" column="64" lean-forward="true" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/DiscussionApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/mooc/client/MoocClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coursenotice/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coursenotice/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-817">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coursenotice/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-628">
+          <caret line="83" column="14" lean-forward="true" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc/src/main/java/com/mooc/mooc/controller/DiscussionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="143" column="70" lean-forward="true" selection-start-line="143" selection-start-column="70" selection-end-line="143" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/service/impl/DiscussionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="80" column="32" lean-forward="true" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discussion/src/main/java/com/mooc/discussion/controller/DiscussionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="175" column="72" lean-forward="true" selection-start-line="175" selection-start-column="72" selection-end-line="175" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

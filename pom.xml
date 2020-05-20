@@ -26,6 +26,7 @@
         <module>courseware</module>
         <module>client</module>
         <module>coursenotice</module>
+        <module>discussion</module>
     </modules>
 
     <dependencies>

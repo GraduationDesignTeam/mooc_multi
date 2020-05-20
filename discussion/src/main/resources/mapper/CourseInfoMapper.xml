@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.discussion.mapper.CourseInfoMapper">
+  <resultMap id="BaseResultMap" type="com.mooc.model.CourseInfo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="intro" jdbcType="VARCHAR" property="intro" />
+    <result column="detail" jdbcType="VARCHAR" property="detail" />
+    <result column="target" jdbcType="VARCHAR" property="target" />
+    <result column="reference" jdbcType="VARCHAR" property="reference" />
+    <result column="photo" jdbcType="VARCHAR" property="photo" />
+    <result column="school" jdbcType="VARCHAR" property="school" />
+    <result column="teacher_id" jdbcType="INTEGER" property="teacherId" />
+    <result column="teacher_name" jdbcType="VARCHAR" property="teacherName" />
+    <result column="open_time" jdbcType="TIMESTAMP" property="openTime" />
+    <result column="close_time" jdbcType="TIMESTAMP" property="closeTime" />
+    <result column="course_state" jdbcType="INTEGER" property="courseState" />
+    <result column="check_state" jdbcType="INTEGER" property="checkState" />
+    <result column="course_authority" jdbcType="INTEGER" property="courseAuthority" />
+  </resultMap>
+  <resultMap id="relationResultMap" type="com.mooc.model.CourseInfo" extends="BaseResultMap">
+    <collection property="teacherList" ofType="com.mooc.model.UserInfo">
+      <id column="uid" property="userId"/>
+      <result column="uschool" property="school"/>
+      <result column="uphone" property="phone"/>
+      <result column="ugrade" property="grade"/>
+      <result column="umajor" property="major"/>
+      <result column="uname" property="name"/>
+      <result column="upicture" property="picture"/>
+    </collection>
+  </resultMap>
+  <resultMap id="MajorStatisticMap" type="com.mooc.model.MajorStatistic">
+    <result column="type" jdbcType="VARCHAR" property="major" />
+    <result property="num" column="course_count"></result>
+  </resultMap>
+  <resultMap id="CourseStatisticMap" type="com.mooc.model.CourseStatistic">
+    <result column="cname" jdbcType="VARCHAR" property="courseName" />
+    <result property="popularity" column="course_count"></result>
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from course_info
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.mooc.model.CourseInfo" useGeneratedKeys="true" keyProperty="id">
+    insert into course_info (id, name, type, 
+      intro, detail, target, 
+      reference, photo, school, 
+      teacher_id, teacher_name, open_time, 
+      close_time, course_state, check_state, 
+      course_authority)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, 
+      #{intro,jdbcType=VARCHAR}, #{detail,jdbcType=VARCHAR}, #{target,jdbcType=VARCHAR}, 
+      #{reference,jdbcType=VARCHAR}, #{photo,jdbcType=VARCHAR}, #{school,jdbcType=VARCHAR}, 
+      #{teacherId,jdbcType=INTEGER}, #{teacherName,jdbcType=VARCHAR}, #{openTime,jdbcType=TIMESTAMP}, 
+      #{closeTime,jdbcType=TIMESTAMP}, #{courseState,jdbcType=INTEGER}, #{checkState,jdbcType=INTEGER}, 
+      #{courseAuthority,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mooc.model.CourseInfo">
+    update course_info
+    set name = #{name,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      intro = #{intro,jdbcType=VARCHAR},
+      detail = #{detail,jdbcType=VARCHAR},
+      target = #{target,jdbcType=VARCHAR},
+      reference = #{reference,jdbcType=VARCHAR},
+      photo = #{photo,jdbcType=VARCHAR},
+      school = #{school,jdbcType=VARCHAR},
+      teacher_id = #{teacherId,jdbcType=INTEGER},
+      teacher_name = #{teacherName,jdbcType=VARCHAR},
+      open_time = #{openTime,jdbcType=TIMESTAMP},
+      close_time = #{closeTime,jdbcType=TIMESTAMP},
+      course_state = #{courseState,jdbcType=INTEGER},
+      check_state = #{checkState,jdbcType=INTEGER},
+      course_authority = #{courseAuthority,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="relationResultMap">
+	select c.id, c.name, c.type, c.intro, c.detail, c.target, c.reference, c.photo, c.school,
+	c.teacher_id, c.teacher_name, c.open_time, c.close_time, c.course_state, c.check_state, c.course_authority,
+	u.user_id uid, u.school uschool, u.phone uphone, u.grade ugrade, u.major umajor, u.name uname, u.picture upicture
+    from course_info as c
+    left join teacher_of_course as t on c.id=t.course_id
+	left join user_info as u on u.user_id=t.teacher_id
+    where c.id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="relationResultMap">
+	select c.id, c.name, c.type, c.intro, c.detail, c.target, c.reference, c.photo, c.school,
+	c.teacher_id, c.teacher_name, c.open_time, c.close_time, c.course_state, c.check_state, c.course_authority,
+	u.user_id uid, u.school uschool, u.phone uphone, u.grade ugrade, u.major umajor, u.name uname, u.picture upicture
+    from course_info as c
+    left join teacher_of_course as t on c.id=t.course_id
+	left join user_info as u on u.user_id=t.teacher_id
+  </select>
+  <select id="queryAll" parameterType="com.mooc.model.CourseInfo" resultMap="relationResultMap">
+    select c.id, c.name, c.type, c.intro, c.detail, c.target, c.reference, c.photo, c.school,
+    c.teacher_id, c.teacher_name, c.open_time, c.close_time, c.course_state, c.check_state, c.course_authority,
+    u.user_id uid, u.school uschool, u.phone uphone, u.grade ugrade, u.major umajor, u.name uname, u.picture upicture
+    from course_info as c
+    left join teacher_of_course as t on c.id=t.course_id
+    left join user_info as u on u.user_id=t.teacher_id
+    <where>
+      <if test="name!=null and name!=''">
+        and c.name like concat('%',#{name},'%')
+      </if>
+      <if test="type!=null and type!=''">
+        and c.type=#{type}
+      </if>
+      <if test="school!=null and school!=''">
+        and c.school=#{school}
+      </if>
+      <if test="teacherName!=null and teacherName!=''">
+        and c.teacher_name=#{teacherName}
+      </if>
+      <if test="checkState!=null">
+        and c.check_state=#{checkState}
+      </if>
+    </where>
+    order by c.open_time desc
+  </select>
+  <select id="selectByTeacherId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select c.id, c.name, c.type, c.intro, c.photo, c.school, c.teacher_id, c.teacher_name,
+    c.open_time, c.close_time, c.course_state, c.check_state, c.course_authority
+    from course_info as c
+    inner join teacher_of_course as t on c.id=t.course_id
+    where t.teacher_id=#{teacherId}
+  </select>
+  <select id="selectByAssistantId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select c.id, c.name, c.type, c.intro, c.photo, c.school, c.teacher_id, c.teacher_name,
+    c.open_time, c.close_time, c.course_state, c.check_state, c.course_authority
+    from course_info as c
+    inner join assistant_of_course as a on c.id=a.course_id
+    where a.assistant_id=#{assistantId}
+  </select>
+  <select id="queryMajorSum" parameterType="java.lang.Integer" resultMap="MajorStatisticMap">
+    select type,count(id) course_count from `course_info`
+    where year(open_time)=#{year}
+    group by type
+    order by count(id) desc
+  </select>
+  <select id="queryCourseSum" parameterType="java.lang.Integer" resultMap="CourseStatisticMap">
+    select course_info.name cname,count(course_user_id) course_count from `student_of_course`
+    inner join course_info on course_id=course_info.id
+    where year(open_time)=#{year}
+    group by cname
+    order by count(course_user_id) desc
+  </select>
+  <select id="selectByCreateTime" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select * from course_info where check_state=1 order by id desc limit #{limit};
+  </select>
+  <select id="selectByMostStudentNumber" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select c.id, c.name, c.type, c.intro, c.detail, c.target, c.reference, c.photo, c.school,
+        c.teacher_id, c.teacher_name, c.open_time, c.close_time, c.course_state, c.check_state, c.course_authority from course_info c
+    left join (select course_id cid, count(*) count from student_of_course GROUP BY course_id ORDER BY count desc LIMIT #{limit}) t
+    on c.id = t.cid
+    and c.check_state = 1
+    limit #{limit};
+  </select>
+</mapper>

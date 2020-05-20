@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooc.discussion.mapper.InformationInfoMapper">
+  <resultMap id="BaseResultMap" type="com.mooc.discussion.model.InformationInfo">
+    <id column="information_id" jdbcType="INTEGER" property="informationId" />
+    <result column="sender_id" jdbcType="INTEGER" property="senderId" />
+    <result column="addresser_id" jdbcType="INTEGER" property="addresserId" />
+    <result column="send_time" jdbcType="TIMESTAMP" property="sendTime" />
+    <result column="information_content" jdbcType="VARCHAR" property="informationContent" />
+    <result column="information_state" jdbcType="INTEGER" property="informationState" />
+    <result column="discussion_id" jdbcType="INTEGER" property="discussionId" />
+    <result column="discuss_record_id" jdbcType="INTEGER" property="discussRecordId" />
+    <result column="person_message_id" jdbcType="INTEGER" property="personMessageId" />
+    <result column="sender_name" jdbcType="VARCHAR" property="senderName" />
+    <result column="addresser_name" jdbcType="VARCHAR" property="addresserName" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from information_info
+    where information_id = #{informationId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.mooc.discussion.model.InformationInfo">
+    insert into information_info (information_id, sender_id, addresser_id, 
+      send_time, information_content, information_state, 
+      discussion_id, discuss_record_id, person_message_id, 
+      sender_name, addresser_name, remarks
+      )
+    values (#{informationId,jdbcType=INTEGER}, #{senderId,jdbcType=INTEGER}, #{addresserId,jdbcType=INTEGER}, 
+      #{sendTime,jdbcType=TIMESTAMP}, #{informationContent,jdbcType=VARCHAR}, #{informationState,jdbcType=INTEGER}, 
+      #{discussionId,jdbcType=INTEGER}, #{discussRecordId,jdbcType=INTEGER}, #{personMessageId,jdbcType=INTEGER}, 
+      #{senderName,jdbcType=VARCHAR}, #{addresserName,jdbcType=VARCHAR}, #{remarks,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mooc.discussion.model.InformationInfo">
+    update information_info
+    set sender_id = #{senderId,jdbcType=INTEGER},
+      addresser_id = #{addresserId,jdbcType=INTEGER},
+      send_time = #{sendTime,jdbcType=TIMESTAMP},
+      information_content = #{informationContent,jdbcType=VARCHAR},
+      information_state = #{informationState,jdbcType=INTEGER},
+      discussion_id = #{discussionId,jdbcType=INTEGER},
+      discuss_record_id = #{discussRecordId,jdbcType=INTEGER},
+      person_message_id = #{personMessageId,jdbcType=INTEGER},
+      sender_name = #{senderName,jdbcType=VARCHAR},
+      addresser_name = #{addresserName,jdbcType=VARCHAR},
+      remarks = #{remarks,jdbcType=VARCHAR}
+    where information_id = #{informationId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select information_id, sender_id, addresser_id, send_time, information_content, information_state, 
+    discussion_id, discuss_record_id, person_message_id, sender_name, addresser_name, 
+    remarks
+    from information_info
+    where information_id = #{informationId,jdbcType=INTEGER}
+  </select>
+  <select id="selectByAddresserid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select information_id, sender_id, addresser_id, send_time, information_content, information_state,
+    discussion_id, discuss_record_id, person_message_id, sender_name, addresser_name,
+    remarks
+    from information_info
+    where addresser_id = #{addresserId,jdbcType=INTEGER} and remarks=0
+  </select>
+  <select id="selectBySenderid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select information_id, sender_id, addresser_id, send_time, information_content, information_state,
+    discussion_id, discuss_record_id, person_message_id, sender_name, addresser_name,
+    remarks
+    from information_info
+    where sender_id = #{senderId,jdbcType=INTEGER} and remarks=0
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select information_id, sender_id, addresser_id, send_time, information_content, information_state, 
+    discussion_id, discuss_record_id, person_message_id, sender_name, addresser_name, 
+    remarks
+    from information_info
+  </select>
+  <select id="selectDiscussion" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select information_id, sender_id, addresser_id, send_time, information_content, information_state,
+    discussion_id, discuss_record_id, person_message_id, sender_name, addresser_name,
+    remarks
+    from information_info
+    where addresser_id = #{addresserId,jdbcType=INTEGER} and remarks=1
+  </select>
+  <select id="selectSystem" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select information_id, sender_id, addresser_id, send_time, information_content, information_state,
+    discussion_id, discuss_record_id, person_message_id, sender_name, addresser_name,
+    remarks
+    from information_info
+    where addresser_id = #{addresserId,jdbcType=INTEGER} and remarks=2
+  </select>
+  <select id="selectUnread" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select information_id, sender_id, addresser_id, send_time, information_content, information_state,
+    discussion_id, discuss_record_id, person_message_id, sender_name, addresser_name,
+    remarks
+    from information_info
+    where information_state = 0
+  </select>
+
+</mapper>

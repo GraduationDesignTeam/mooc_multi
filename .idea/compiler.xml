@@ -7,13 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mooc" />
-        <module name="courseware" />
-        <module name="common" />
-        <module name="coursenotice" />
-        <module name="course" />
-        <module name="server" />
         <module name="client" />
+        <module name="common" />
+        <module name="course" />
+        <module name="coursenotice" />
+        <module name="courseware" />
+        <module name="discussion" />
+        <module name="mooc" />
+        <module name="server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +28,7 @@
       <module name="course" options="-parameters" />
       <module name="coursenotice" options="-parameters" />
       <module name="courseware" options="-parameters" />
+      <module name="discussion" options="-parameters" />
       <module name="mooc" options="-parameters" />
       <module name="server" options="-parameters" />
     </option>

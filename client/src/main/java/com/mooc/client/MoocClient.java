@@ -28,4 +28,6 @@ public interface MoocClient {
      */
     @RequestMapping("user/sel/{userId}")
     UserInfo sel(@PathVariable Integer userId);
+
+
 }
