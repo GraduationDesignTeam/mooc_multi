@@ -9,3 +9,7 @@ server:
 spring:
   application:
     name: discussion
+
+feign:
+  hystrix:
+    enabled: true
