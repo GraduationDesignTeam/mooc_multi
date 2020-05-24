@@ -94,11 +94,8 @@
   </select>
   <select id="queryAll" parameterType="com.mooc.mooc.model.CourseInfo" resultMap="relationResultMap">
     select c.id, c.name, c.type, c.intro, c.detail, c.target, c.reference, c.photo, c.school,
-    c.teacher_id, c.teacher_name, c.open_time, c.close_time, c.course_state, c.check_state, c.course_authority,
-    u.user_id uid, u.school uschool, u.phone uphone, u.grade ugrade, u.major umajor, u.name uname, u.picture upicture
+    c.teacher_id, c.teacher_name, c.open_time, c.close_time, c.course_state, c.check_state, c.course_authority
     from course_info as c
-    left join teacher_of_course as t on c.id=t.course_id
-    left join user_info as u on u.user_id=t.teacher_id
     <where>
       <if test="name!=null and name!=''">
         and c.name like concat('%',#{name},'%')
