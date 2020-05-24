@@ -105,6 +105,12 @@ public class CourseWareController {
         return new PageInfo<>(courseWareService.selectUnassociatedByCourseId(courseId));
     }
 
+    /**
+     * 下载课件
+     * @param originName 原文件名（用于查找原始文件）
+     * @param newName 新文件名（用户下载后保存到用户端的文件名）
+     * @param response http请求应答实体
+     */
     @GetMapping("/download/{originName:.+}")
     public void downloadFile(@PathVariable String originName, @RequestParam String newName, HttpServletResponse response) {
         InputStream inputStream = null;
@@ -118,7 +124,7 @@ public class CourseWareController {
             //1.设置文件ContentType类型
             response.setContentType("application/octet-stream;charset=UTF-8");
             out = response.getOutputStream();
-            //2.转码
+            //2.文件名从 UTF-8 转码成 windows 端可辨认的 ISO-8859-1编码
             String convertName = new String(newName.getBytes("UTF-8"), "ISO-8859-1");
             //3.设置Content-Disposition
             response.setHeader("Content-Disposition", "attachment; filename=" + convertName);
@@ -134,12 +140,12 @@ public class CourseWareController {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            try {
+            try { // 操作结束后关闭输入流、输出流
                 inputStream.close();
                 out.close();
                 out.flush();
             } catch (IOException e) {
-
+                e.printStackTrace();
             }
         }
     }

@@ -48,6 +48,8 @@ public class FileHelper {
 
     /**
      * 加载文件
+     * 将文件转换为 org.springframework.core.io.Resource 类型
+     * @param directoryPath 目录名
      * @param fileName 文件名
      * @return 文件
      */
