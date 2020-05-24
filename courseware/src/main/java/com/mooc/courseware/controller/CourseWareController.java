@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 
 /**
  * 课件控制器
@@ -125,7 +126,7 @@ public class CourseWareController {
             response.setContentType("application/octet-stream;charset=UTF-8");
             out = response.getOutputStream();
             //2.文件名从 UTF-8 转码成 windows 端可辨认的 ISO-8859-1编码
-            String convertName = new String(newName.getBytes("UTF-8"), "ISO-8859-1");
+            String convertName = new String(newName.getBytes(StandardCharsets.UTF_8), StandardCharsets.ISO_8859_1);
             //3.设置Content-Disposition
             response.setHeader("Content-Disposition", "attachment; filename=" + convertName);
             int b = 0;
